@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>account</title>
+    <style>
+        body {
+            background-color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .box{
+            margin: 30px;
+            width: 600px;
+            background-color: #4d7d8d;
+            padding: 30px;
+        }
+        form{
+            background: #f5f5f5;
+            padding: 20px 35px 10px;
+            border-radius: 10px;
+        }
+        h2 {
+            text-align: center;
+            color: ;
+            margin-top: 0;
+        }
+        label {
+            color: #26ad91;
+            font-weight: bold;
+        }
+        input, select, textarea{
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 8px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"]{
+            width: 100%;
+        }
+        .row{
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .half{
+            width: 50%;
+        }
+        .full{
+            width: 100%;
+        }
+        .radio input,
+        .check input{
+            width: auto;
+            margin-right: 5px ;
+        }
+        select{
+            width: 100%;
+        }
+        textarea{
+            width: 100%;
+            height: 100px;
+
+        }
+        input[type="range"]{
+            width: 80%;
+        }
+        .income{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+        }
+        .amount{
+            background-color: #28b895;
+            color: white;
+            padding: 10px;
+            border-radius: 7px;
+        }
+        .button{
+            text-align: right;
+            margin-top: 20px;
+        }
+        button{
+            background-color: #28b895;
+            color: white;
+            border-radius: 5px;
+            padding: 10px 20px;
+            border: none;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form action="">
+            <h1>Create Account</h1>
+
+            <div class="row">
+                <div class="half">
+                    <label for="">First Name *</label>
+                    <input type="text" name="" id="" placeholder="enter your FirstName">
+                </div>
+                <div class="half">
+                    <label for="">Last Name*</label>
+                    <input type="text" placeholder="enter your lastname" name="" id="">
+                </div>
+            </div>
+                <div class="row">
+                    <div class="full">
+                        <label for="">Email*</label>
+                    <input type="email" placeholder="enter your email" name="" id="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="half">
+                        
+                    <label for="">Password</label>
+                    <input type="password" placeholder="enter your Password" name="" id="">
+                    </div>
+                    <div class="half">
+                        
+                    <label for="">confirm Password</label>
+                    <input type="text" placeholder="enter your Password again" name="" id="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="half">
+                        <label for="">Gender :</label><br>
+                        <span class="radio">
+                            <input type="radio" name="Gender" id="">Male
+                            <input type="radio" name="Gender" id="">Female
+                        </span>
+                    </div>
+                    <div class="half">
+                        <label for="">Hobbies</label>
+                        <span class="check">
+                            <input type="checkbox" name="" id="">Music
+                            <input type="checkbox" name="" id="">Sports
+                            <input type="checkbox" name="" id="">Travel
+                            <input type="checkbox" name="" id="">Movies
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="half">
+                        <label for="">Source of income</label>
+                        <select>
+                            <option value="">Employed</option>
+                            <option value="">Employed</option>
+                            <option value="">Employed</option>
+                            <option value="">Employed</option>
+                        </select>
+                    </div>
+                    <div class="half">
+                        <label for="">income</label>
+                      <div class="income">
+                        <input type="range" min="10" max="100" value="20" id="">
+                        <span class="amount">20K</span>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="half">
+                        <label for="">Upload Profile Picture</label><br>
+                        <input type="file" name="" id="">
+                    </div>
+
+                    <div class="half">
+                        <label for="">Age</label>
+                        <input type="number" name="" id="" value="18">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="full">
+                        <label for="">Bio</label>
+                        <textarea name="" id=""></textarea>
+                    </div>
+                </div>
+                <div class="button">
+                    <button type="submit">Create</button>
+                </div>
+
+
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
