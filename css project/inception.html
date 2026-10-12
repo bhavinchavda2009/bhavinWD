@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inception Details</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+/* Header */
+.header {
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-list li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-list a:hover {
+    color: orange;
+}
+
+/* Main Content */
+.main-content {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.movie-info,
+.plot-section,
+.cast-section,
+.page,
+.reviews-section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.movie-title,
+.section-title {
+    color: #333;
+}
+
+.rating,
+.stars {
+    color: orange;
+}
+
+
+.spec-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.spec-table th,
+.spec-table td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+.spec-table th {
+    background-color: #333;
+    color: white;
+}
+
+
+.review {
+    background-color: #f2f2f2;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.review-text {
+    line-height: 1.5;
+}
+
+
+.return-link {
+    color: blue;
+    text-decoration: none;
+}
+
+.return-link:hover {
+    color: red;
+}
+
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+
+@media (max-width: 600px) {
+    .main-content {
+        width: 95%;
+    }
+
+    .spec-table th,
+    .spec-table td {
+        padding: 5px;
+        font-size: 12px;
+    }
+}
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <h1 class="logo"><a href="index.html">Movie Explorer</a></h1>
+
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="catalogue.html">Catalogue</a></li>
+            <li><a href="details.html">Movie Details</a></li>
+            <li><a href="about.html">About & Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="main-content">
+
+    <section class="movie-info">
+        <h1 class="movie-title">Inception (2010)</h1>
+
+        <p><strong>User Score Rating:</strong>
+        <span class="rating">★ 8.8 / 10</span> (Based on 2.4M votes)</p>
+
+        <h2 class="section-title">Film Overview & Specifications</h2>
+
+        <p><strong>Genre:</strong> Science Fiction, Action, Mystery</p>
+        <p><strong>Director:</strong> Christopher Nolan</p>
+        <p><strong>Writer:</strong> Christopher Nolan</p>
+        <p><strong>Release Date:</strong> July 16, 2010</p>
+        <p><strong>Runtime Duration:</strong> 148 Minutes (2h 28m)</p>
+        <p><strong>Original Language:</strong> English</p>
+        <p><strong>Box Office Revenue:</strong> $836.8 Million USD</p>
+        <p><strong>Production Budget:</strong> $160 Million USD</p>
+    </section>
+
+    <section class="plot-section">
+        <h2 class="section-title">Plot Synopsis</h2>
+
+        <p>
+            Dom Cobb is a skilled thief who steals valuable secrets from
+            deep within the subconscious during dreams. Cobb is offered
+            a chance at redemption through one last job: planting an idea
+            instead of stealing one. If successful, it could be the
+            perfect crime.
+        </p>
+    </section>
+
+    <section class="cast-section">
+        <h2 class="section-title">Starring Cast</h2>
+
+        <p><strong>Leonardo DiCaprio</strong> as Dom Cobb (The Extractor)</p>
+        <p><strong>Joseph Gordon-Levitt</strong> as Arthur (The Point Man)</p>
+        <p><strong>Elliot Page</strong> as Ariadne (The Architect)</p>
+        <p><strong>Tom Hardy</strong> as Eames (The Forger)</p>
+        <p><strong>Ken Watanabe</strong> as Saito (The Tourist)</p>
+        <p><strong>Cillian Murphy</strong> as Robert Fischer (The Target)</p>
+        <p><strong>Marion Cotillard</strong> as Mal Cobb (The Shade)</p>
+        <p><strong>Michael Caine</strong> as Professor Stephen Miles</p>
+    </section>
+
+    <section class="page">
+        <h2 class="section-title">Technical & Production Specs</h2>
+
+        <table class="spec-table">
+            <tr>
+                <th>Specification Aspect</th>
+                <th>Technical Information</th>
+            </tr>
+            <tr>
+                <td>Aspect Ratio</td>
+                <td>2.39 : 1 (Anamorphic Widescreen)</td>
+            </tr>
+            <tr>
+                <td>Camera Capture</td>
+                <td>Arriflex 235, Panavision Panaflex Millennium XL</td>
+            </tr>
+            <tr>
+                <td>Sound Mix Format</td>
+                <td>DTS, Dolby Digital, SDDS</td>
+            </tr>
+            <tr>
+                <td>Production Companies</td>
+                <td>Warner Bros. Pictures, Legendary Entertainment, Syncopy</td>
+            </tr>
+            <tr>
+                <td>Filming Locations</td>
+                <td>Tokyo, Bedfordshire, Paris, Calgary</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="reviews-section">
+        <h2 class="section-title">Audience Reviews</h2>
+
+        <div class="review">
+            <h3>"A Mind-Bending Masterpiece of Modern Cinema"</h3>
+            <p><strong>Reviewer:</strong> Alex Johnson</p>
+            <p><strong>Date:</strong> August 12, 2021</p>
+            <p><strong>Rating:</strong> 5.0/5</p>
+            <p class="stars">★★★★★</p>
+            <p class="review-text">
+                Christopher Nolan delivers a visual and narrative triumph.
+                The dream mechanics and Hans Zimmer's musical score elevate
+                every scene.
+            </p>
+        </div>
+
+        <div class="review">
+            <h3>"Incredible Visual Effects and Concept"</h3>
+            <p><strong>Reviewer:</strong> Sarah Miller</p>
+            <p><strong>Date:</strong> January 04, 2023</p>
+            <p><strong>Rating:</strong> <span class="stars">★★★★☆</span></p>
+            <p class="review-text">
+                An extremely fast-paced and complex movie. The rotating
+                hallway fight scene remains one of the best practical effects.
+            </p>
+        </div>
+
+        <a href="catalogue.html" class="return-link">
+            ← Return to Movie Catalogue
+        </a>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>© 2026 Movie Explorer Portal — B.Tech 1st Year Web Designing Lab Assignment</p>
+</footer>
+
+</body>
+</html>

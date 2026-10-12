@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Catalogue</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+/* Header */
+.header {
+    background-color: #222;
+    color: white;
+    padding: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main */
+.main-content {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.page-title,
+.records-title {
+    color: #333;
+}
+
+.intro {
+    margin-bottom: 20px;
+}
+
+/* Filter Form */
+.filter-section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.filter-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.filter-form input,
+.filter-form select {
+    padding: 8px;
+    margin: 5px 0;
+}
+
+.filter-form button {
+    padding: 8px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Movie Cards */
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.movie {
+    background-color: white;
+    width: 250px;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.movie img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.movie h2 {
+    font-size: 20px;
+}
+
+.movie a {
+    color: blue;
+}
+
+
+.pagination {
+    margin: 25px 0;
+}
+
+.pagination a {
+    margin: 5px;
+}
+
+
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .nav-list {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .movie {
+        width: 100%;
+    }
+}
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <h1 class="logo"><a href="home.html">Movie Explorer</a></h1>
+
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a href="details.html">Movie Details</a></li>
+                <li><a href="about.html">About & Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="main-content">
+
+    <h1 class="page-title">Complete Movie Catalogue</h1>
+    <p class="intro">Use the form options below to filter and sort through our film database.</p>
+
+    <section class="filter-section">
+        <h2>Filter & Search Options</h2>
+
+        <form class="filter-form">
+            <label for="search">Search Title / Director:</label>
+            <input type="text" id="search" placeholder="e.g. Nolan, Inception...">
+
+            <label for="genre">Select Genre:</label>
+            <select id="genre">
+                <option>All Genres</option>
+                <option>Action</option>
+                <option>Drama</option>
+                <option>Science Fiction</option>
+                <option>Animation</option>
+                <option>Crime</option>
+                <option>Thriller</option>
+            </select>
+
+            <label for="sort">Sort Records By:</label>
+            <select id="sort">
+                <option>Default</option>
+                <option>Rating</option>
+                <option>Release Year</option>
+                <option>Title</option>
+            </select>
+
+            <button type="submit">Apply Filters</button>
+            <button type="reset">Reset</button>
+        </form>
+    </section>
+
+    <h2 class="records-title">All Movie Records (8 Items)</h2>
+
+    <div class="movie-container">
+
+        <div class="movie">
+            <h2>Inception (2010)</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsgXAndLrxHe5wGOIBGs961Km6D9ckI8LJ8lWGlh75pg&s=10" alt="Inception poster">
+            <p>Genre: Science Fiction | Rating: ★ 8.8</p>
+            <p>Director: Christopher Nolan</p>
+            <p>Duration: 148 minutes | Language: English</p>
+            <p>A thief who steals corporate secrets through dream-sharing technology is given the inverse task of planting an idea...</p>
+            <a href="details.html">View Details Page</a>
+        </div>
+
+        <div class="movie">
+            <h2>The Dark Knight (2008)</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZxkueZBnBwie90ZfzNCuYZykLNByhqN3kiClsgxHqAA&s=10" alt="The Dark Knight poster">
+            <p>Genre: Action | Rating: ★ 9.0</p>
+            <p>Director: Christopher Nolan</p>
+            <p>Duration: 152 minutes | Language: English</p>
+            <p>When the Joker wreaks havoc on Gotham City, Batman must accept a great psychological test...</p>
+            <a href="details.html">View Details Page</a>
+        </div>
+
+        <div class="movie">
+            <h2>Interstellar (2014)</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN6MBU9VxzNxqU0gzzOsgDR0Mpxn4_6BDHIzD-Xc8YaQ&s=10" alt="Interstellar poster">
+            <p>Genre: Science Fiction | Rating: ★ 8.7</p>
+            <p>Director: Christopher Nolan</p>
+            <p>Duration: 169 minutes | Language: English</p>
+            <p>A team of explorers travel through a wormhole in space to ensure humanity's survival...</p>
+            <a href="details.html">View Details Page</a>
+        </div>
+
+        <div class="movie">
+            <h2>Pulp Fiction (1994)</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk-2ptEbmc6Lx1CvpQamlGVLvDxb0TZYRVbsKoah2ooA&s=10" alt="Pulp Fiction poster">
+            <p>Genre: Crime | Rating: ★ 8.9</p>
+            <p>Director: Quentin Tarantino</p>
+            <p>Duration: 154 minutes | Language: English</p>
+            <p>The lives of two mob hitmen, a boxer, a gangster and his wife intertwine in four tales of violence...</p>
+            <a href="details.html">View Details Page</a>
+        </div>
+
+        <div class="movie">
+            <h2>The Shawshank Redemption (1994)</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyRxbMD5yd2RG0aZ_yP9SPBXqEruXABuAEAnrOPK7Ybw&s=10" alt="The Shawshank Redemption poster">
+            <p>Genre: Drama | Rating: ★ 9.3</p>
+            <p>Director: Frank Darabont</p>
+            <p>Duration: 142 minutes | Language: English</p>
+            <p>Two imprisoned men bond over a number of years, finding solace and eventual redemption...</p>
+            <a href="details.html">View Details Page</a>
+        </div>
+
+        <div class="movie">
+            <h2>Spirited Away (2001)</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6_ZMTP-AmWnarhhnLqfSARQzpCthiz-qhJly8ptUfwg&s=10" alt="Spirited Away poster">
+            <p>Genre: Animation | Rating: ★ 8.6</p>
+            <p>Director: Hayao Miyazaki</p>
+            <p>Duration: 125 minutes | Language: Japanese</p>
+            <p>A young girl wanders into a world ruled by gods and spirits...</p>
+            <a href="details.html">View Details Page</a>
+        </div>
+
+        <div class="movie">
+            <h2>The Matrix (1999)</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsUyob1nsYqWJ9N7nXkJoEqFAP7Z17qnBIM8nsOhh74g&s=10" alt="The Matrix poster">
+            <p>Genre: Action / Sci-Fi | Rating: ★ 8.7</p>
+            <p>Director: Lana & Lilly Wachowski</p>
+            <p>Duration: 136 minutes | Language: English</p>
+            <p>A computer hacker learns the true nature of his reality...</p>
+            <a href="details.html">View Details Page</a>
+        </div>
+
+        <div class="movie">
+            <h2>Parasite (2019)</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEWP0EtvEQQKA1CUplqT-LzNuKoTzSUssOxxu_7PMoNA&s=10" alt="Parasite poster">
+            <p>Genre: Thriller / Drama | Rating: ★ 8.5</p>
+            <p>Director: Bong Joon Ho</p>
+            <p>Duration: 132 minutes | Language: Korean</p>
+            <p>Greed and class discrimination threaten the relationship between a wealthy and poor family...</p>
+            <a href="details.html">View Details Page</a>
+        </div>
+
+    </div>
+
+    <section class="pagination">
+        <h2>Page Navigation</h2>
+        <p>Showing Page 1 of 2</p>
+        <p>
+            <a href="#">« Previous</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">Next »</a>
+        </p>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>© 2026 Movie Explorer Portal — B.Tech 1st Year Web Designing Lab Assignment</p>
+</footer>
+
+</body>
+</html>
